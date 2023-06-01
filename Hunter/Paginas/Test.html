@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>¿Cuánto saber sobre HXH?</title>
+        <style>
+            body
+            {
+                background-color: black;
+                color: white;
+            }
+            h1.test
+            {
+                background-color: rgb(41, 92, 41);
+                color: white;
+                padding: 1px;
+                text-align: center;
+                border-radius: 20px;
+            }
+            h1.tit
+            {
+                text-align: center;
+                font-size: 3pc;
+            }
+            div.preg
+            {
+                border: 5px solid rgb(191, 188, 188);
+                border-width: 5px;
+                border-right: 0px;
+                border-left: 0px;
+            }
+            button
+            {
+                background-color: rgb(75, 106, 75);
+                color: white;
+                width: 200px;
+                border: 2px solid rgb(24, 58, 24);
+                border-radius: 10px ;
+                height: 40px;
+            }
+            div.resultados
+            {
+                background-color: rgb(163, 194, 163);
+                border: 15px solid rgb(3, 77, 3);
+                border-radius: 10px;
+                width: 50%;
+                align-items: flex-start;
+                color: rgb(14, 62, 14);
+                display: flex;
+            }
+            div.form
+            {
+                margin: 50px;
+                font-size: large;
+                display: flex;
+            }
+            .nav-men{
+                text-decoration: none;
+                color: white;
+                margin: 10px;
+                font-size: 1pc;
+
+            }
+        </style>
+        <script>
+            function resultado()
+            {
+                let v=0; 
+                let i; 
+                for(i=1; i<=20; i++)
+                {
+                    let x = document.forms["test"]["preg"+i].value; 
+                    if(x==2)
+                    {
+                        v++; 
+                    }
+                }
+                if(v<=20 && v>=16)
+                {
+                    document.getElementById("resultado1").innerHTML = "Tu resultado es:";
+                    document.getElementById("resultado2").innerHTML = v;
+                    document.getElementById("resultado3").innerHTML = "Eres un Cazador Profesional";
+                    document.getElementById("resultado4").innerHTML = "Tienes un buen nivel, te sabes la serie y eres un orgulloso Hunter";
+                    document.getElementById("resultado5").innerHTML = "Aciertos:";
+                }
+                if(v<=15 && v>=11)
+                {
+                    document.getElementById("resultado1").innerHTML = "Tu resultado es:";
+                    document.getElementById("resultado2").innerHTML = v;
+                    document.getElementById("resultado3").innerHTML = "Estas cerca de ser fuerte";
+                    document.getElementById("resultado4").innerHTML = "Te falta poco para poder acompañat a ellos";
+                    document.getElementById("resultado5").innerHTML = "Aciertos:";
+                }
+                if(v<=10 && v>=6)
+                {
+                    document.getElementById("resultado1").innerHTML = "Tu resultado es:";
+                    document.getElementById("resultado2").innerHTML = v;
+                    document.getElementById("resultado3").innerHTML = "Te falto";
+                    document.getElementById("resultado4").innerHTML = "Tienes un buen conocimiento pero estas lejos de salvar a kite";
+                    document.getElementById("resultado5").innerHTML = "Aciertos:";
+                }
+                if(v<=5 && v>=0)
+                {
+                    document.getElementById("resultado1").innerHTML = "Tu resultado es:";
+                    document.getElementById("resultado2").innerHTML = v;
+                    document.getElementById("resultado3").innerHTML = "Mal =(";
+                    document.getElementById("resultado4").innerHTML = "Deberías volver a ver la serie..";
+                    document.getElementById("resultado5").innerHTML = "Aciertos:";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div style="display: flex;">
+            <a href="../index.html"><img width="80px" height="55px" src="../Media/Logo.png" alt=""></a>
+            <a class="nav-men" href="Paginas/Informacion.html">Informacion</a>
+            <a class="nav-men" href="../Paginas/Personajes.html">Personajes</a>
+            <a class="nav-men" href="../Paginas/Multimedia.html">Multimedia</a>
+            <a class="nav-men" href="../Paginas/Redes.html">Redes Sociales</a>
+            <a class="nav-men" style="color: green;" href="../Paginas/Test.html">Quiz</a>
+            <a class="nav-men" href="../Paginas/Preguntas.html">Preguntas Frecuentes</a>
+            <a class="nav-men" href="../Paginas/Referencias.html">Referencias</a>
+        </div>
+        <h1 class="test">Test</h1>
+        <div class="preg">
+            <h1 class="tit">¿Cuanto sabes sobre Hunter X Hunter?</h1>
+        </div>
+        <div class="form">
+            <div style="width: 90%;">
+                <form name="test" action="" >
+                    <p>1. ¿Como se llama la isla donde se crió Gon?</p>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio1" name="preg1" value="1" >
+                        <label class="form-check-label" for="radio1">Isla Tokira</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio2" name="preg1" value="1" >
+                        <label class="form-check-label" for="radio2">Isla Tortuga</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio3" name="preg1" value="2" >
+                        <label class="form-check-label" for="radio3">Isla Ballena</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio4" name="preg1" value="1" >
+                        <label class="form-check-label" for="radio4">Isla Torbellino</label>
+                    </div>
+                    <p>2. En la primera fase del examen de cazador, ¿cuantos Km corrieron hasta llegar a las escaleras?</p>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio1" name="preg2" value="1" >
+                        <label class="form-check-label" for="radio1">90 Km</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio2" name="preg2" value="2" >
+                        <label class="form-check-label" for="radio2">80 km</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio3" name="preg2" value="1" >
+                        <label class="form-check-label" for="radio3">60 Km</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio4" name="preg2" value="1" >
+                        <label class="form-check-label" for="radio4">70 km</label>
+                    </div>
+                    <p>3. ¿Como se llama la técnica que se ve en la imagen?</p><br>
+                    <img src="../Media/test1.jpg"><br>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio1" name="preg3" value="2" >
+                        <label class="form-check-label" for="radio1">Eco Ritmico.</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio2" name="preg3" value="1" >
+                        <label class="form-check-label" for="radio2">Pulso Ritmico.</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio3" name="preg3" value="1" >
+                        <label class="form-check-label" for="radio3">Marca paso Ritmico.</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio4" name="preg3" value="1" >
+                        <label class="form-check-label" for="radio4">Onda Ritmica.</label>
+                    </div>
+                    <p>4. ¿Cuantas veces aproximadamente lanzo la caña de pescar, cuando entrenaba para quitarle la ficha a Hisoka?</p>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio1" name="preg4" value="2" >
+                        <label class="form-check-label" for="radio1">7000 veces.</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio2" name="preg4" value="1" >
+                        <label class="form-check-label" for="radio2">1000 veces.</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio3" name="preg4" value="1" >
+                        <label class="form-check-label" for="radio3">2000 veces.</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio4" name="preg4" value="1" >
+                        <label class="form-check-label" for="radio4">1765 veces.</label>
+                    </div>
+                    <p>5. ¿Como se llama los 4 cuatro principios Fundamentales del Nen?</p>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio1" name="preg5" value="2" >
+                        <label class="form-check-label" for="radio1">Zetsu ,Ten , Hatsu , Ren.</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio2" name="preg5" value="1" >
+                        <label class="form-check-label" for="radio2">Zetsu, Gyo , Hatsu , Ren</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio3" name="preg5" value="1" >
+                        <label class="form-check-label" for="radio3">Hatsu , Ren , Shu ,Ten.</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio4" name="preg5" value="1" >
+                        <label class="form-check-label" for="radio4">In ,Ten , Hatsu , Ren.</label>
+                    </div>
+                    <p>6. ¿Cuales miembros del Gen'ei Ryodan son tipo de nen: Especialización?</p>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio1" name="preg6" value="1" >
+                        <label class="form-check-label" for="radio1">Kuroro Lucifer, Feitan y Phinx.</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio2" name="preg6" value="2" >
+                        <label class="form-check-label" for="radio2">Kuroro Lucifer y Pakunoda.</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio3" name="preg6" value="1" >
+                        <label class="form-check-label" for="radio3">Machi y Shizuku.</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio4" name="preg6" value="1" >
+                        <label class="form-check-label" for="radio4">Kuroro Lucifer y Bonolenov.</label>
+                    </div>
+                    <p>7. ¿Que tipo de cazador no existe o no es nombrada en la serie?</p>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio1" name="preg7" value="1" >
+                        <label class="form-check-label" for="radio1">Cazador de virus.</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio2" name="preg7" value="1" >
+                        <label class="form-check-label" for="radio2">Cazador de terrorista.</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio3" name="preg7" value="2" >
+                        <label class="form-check-label" for="radio3">Cazador de mascota.</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio4" name="preg7" value="1" >
+                        <label class="form-check-label" for="radio4">Cazador de belleza.</label>
+                    </div>
+                    <p>8. En la torre del cielo Hisoka se enfrenta aun luchador que ya vencio hace 2 años. ¿Como se llamaba?</p>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio1" name="preg8" value="1" >
+                        <label class="form-check-label" for="radio1">Komugi.</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio2" name="preg8" value="2" >
+                        <label class="form-check-label" for="radio2">Kastro.</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio3" name="preg8" value="1" >
+                        <label class="form-check-label" for="radio3">Hanzo.</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio4" name="preg8" value="1" >
+                        <label class="form-check-label" for="radio4">Sharnock.</label>
+                    </div>
+                    <p>9. ¿Como se llamaban los secuaces de Genthru?</p>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio1" name="preg9" value="1" >
+                        <label class="form-check-label" for="radio1">Abe y Buhara.</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio2" name="preg9" value="1" >
+                        <label class="form-check-label" for="radio2">Bodoro y Satots.</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio3" name="preg9" value="1" >
+                        <label class="form-check-label" for="radio3">Pike y Ginta.</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio4" name="preg9" value="2" >
+                        <label class="form-check-label" for="radio4">Sub y Bara.</label>
+                    </div>
+                    <p>10. La habilidad de Kite era "Payaso Enojado". ¿Cuantas armas tenia ese poder nen?</p>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio1" name="preg10" value="1" >
+                        <label class="form-check-label" for="radio1">11</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio2" name="preg10" value="1" >
+                        <label class="form-check-label" for="radio2">12</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio3" name="preg10" value="2" >
+                        <label class="form-check-label" for="radio3">10</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio4" name="preg10" value="1" >
+                        <label class="form-check-label" for="radio4">6</label>
+                    </div>
+                    <p>11. ¿Como se llama la técnica de falsificación que les enseño Zepairu para escapar de Nobunaga?</p>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio1" name="preg11" value="1" >
+                        <label class="form-check-label" for="radio1">Ataque de Costado.</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio2" name="preg11" value="2" >
+                        <label class="form-check-label" for="radio2">Ataque Lateral.</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio3" name="preg11" value="1" >
+                        <label class="form-check-label" for="radio3">Daño Lateral.</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio4" name="preg11" value="1" >
+                        <label class="form-check-label" for="radio4">Daño Colateral.</label>
+                    </div>
+                    <p>12. ¿Como se llama el juego de mesa que jugaban Meruem y Komugi?</p>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio1" name="preg12" value="1" >
+                        <label class="form-check-label" for="radio1">shogi.</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio2" name="preg12" value="1" >
+                        <label class="form-check-label" for="radio2">Shojo.</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio3" name="preg12" value="1" >
+                        <label class="form-check-label" for="radio3">Go.</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio4" name="preg12" value="2" >
+                        <label class="form-check-label" for="radio4">Gungi.</label>
+                    </div>
+                    <p>13. ¿Como se llamaba la sonata que deformo a Senritsu?</p>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio1" name="preg13" value="1" >
+                        <label class="form-check-label" for="radio1">Sonata Del Diablo.</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio2" name="preg13" value="1" >
+                        <label class="form-check-label" for="radio2">Sonata Maligna.</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio3" name="preg13" value="1" >
+                        <label class="form-check-label" for="radio3">Sonata Infernal.</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio4" name="preg13" value="2" >
+                        <label class="form-check-label" for="radio4">Sonata Oscura.</label>
+                    </div>
+                    <p>14. ¿Cuantos golpes y oraciones hacia Isaac Netero Cuando fue a entrenar a las montañas?</p>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio1" name="preg14" value="1" >
+                        <label class="form-check-label" for="radio1">cien mil golpes y oraciones.</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio2" name="preg14" value="1" >
+                        <label class="form-check-label" for="radio2">once mil golpes y oraciones.</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio3" name="preg14" value="2" >
+                        <label class="form-check-label" for="radio3">diez mil golpes y oraciones.</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio4" name="preg14" value="1" >
+                        <label class="form-check-label" for="radio4">veinte mil golpes y oraciones.</label>
+                    </div>
+                    <p>15. ¿Cual de estas NO es una regla del poder Alluka Zoldyck?</p>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio1" name="preg15" value="2" >
+                        <label class="form-check-label" for="radio1">Si alguien no cumple con las peticiones de Alluka y muere, el nivel de dificultad se mantiene.</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio2" name="preg15" value="1" >
+                        <label class="form-check-label" for="radio2">Si la persona que cumple las peticiones muere durante el transcurso de esta, contará como un fracaso y otra persona más morirá.</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio3" name="preg15" value="1" >
+                        <label class="form-check-label" for="radio3">Cuando Alluka hace la primera petición, no se puede cambiar de persona a mitad de camino.</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio4" name="preg15" value="1" >
+                        <label class="form-check-label" for="radio4">Alluka no puede hacer peticiones a alguien sin conocer su nombre.</label>
+                    </div>
+                    <p>16. ¿Como se llama el poder nen que esta usando en la imagen Killua?</p><br>
+                    <img src="Media/Killua_Dios.png"><br>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio1" name="preg16" value="2" >
+                        <label class="form-check-label" for="radio1">Velocidad de Dios.</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio2" name="preg16" value="1" >
+                        <label class="form-check-label" for="radio2">Velocidad Relampago.</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio3" name="preg16" value="1" >
+                        <label class="form-check-label" for="radio3">Kirin.</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio4" name="preg16" value="1" >
+                        <label class="form-check-label" for="radio4">Narukami.</label>
+                    </div>
+                    <p>17. ¿Que frase dijo Gon antes de transformase en una versión adulta?</p>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio1" name="preg17" value="2" >
+                        <label class="form-check-label" for="radio1">No me importa si es la ultima vez.</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio2" name="preg17" value="1" >
+                        <label class="form-check-label" for="radio2">Asi que usare todo lo que tengo.</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio3" name="preg17" value="1" >
+                        <label class="form-check-label" for="radio3">No me importa si muero aquí.</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio4" name="preg17" value="1" >
+                        <label class="form-check-label" for="radio4">Te matare Pitou.</label>
+                    </div>
+                    <p>18. ¿Como se le decía a la bomba que tenia netero puesta dentro de su cuerpo?</p>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio1" name="preg18" value="1" >
+                        <label class="form-check-label" for="radio1">Bomba de los pobres</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio2" name="preg18" value="2" >
+                        <label class="form-check-label" for="radio2">Rosa en miniatura</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio3" name="preg18" value="1" >
+                        <label class="form-check-label" for="radio3">Pequeña flor</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio4" name="preg18" value="1" >
+                        <label class="form-check-label" for="radio4">Pequeña Rosa</label>
+                    </div>
+                    <p>19. ¿Que tan alto media el árbol mundial?</p>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio1" name="preg19" value="1" >
+                        <label class="form-check-label" for="radio1">2000 metros</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio2" name="preg19" value="2" >
+                        <label class="form-check-label" for="radio2">1784 metros</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio3" name="preg19" value="1" >
+                        <label class="form-check-label" for="radio3">1963 metros</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio4" name="preg19" value="1" >
+                        <label class="form-check-label" for="radio4">10000 metros</label>
+                    </div>
+                    <p>20. ¿Que es lo que quiere Ging? (En la explicación que se le da a gon en la cima del arbol)</p>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio1" name="preg20" value="1" >
+                        <label class="form-check-label" for="radio1">Tener aventuras con mis compañeros.</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio2" name="preg20" value="1" >
+                        <label class="form-check-label" for="radio2">Los tesoros mas raros del mundo.</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio3" name="preg20" value="1" >
+                        <label class="form-check-label" for="radio3">Ir al continente oscuro.</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio4" name="preg20" value="2" >
+                        <label class="form-check-label" for="radio4">Lo que no puedo ver delante mio.</label>
+                    </div>
+                    <br><br>
+                    
+                </form>
+                <a href="#resultado"><button type="button" onclick="return resultado()">Submit</button></a>
+            </div>
+            <div style="text-align:right; width: 10%;">
+                <div><img src="../Media/margen.jpg"></div>
+                <div><img src="../Media/margen.jpg"></div>
+                <div><img src="../Media/margen.jpg"></div>
+                <div><img src="../Media/margen.jpg"></div>
+                <div><img src="../Media/margen.jpg"></div>
+                <div><img src="../Media/margen.jpg"></div>
+                <div><img src="../Media/margen.jpg"></div>
+                <div><img src="../Media/margen.jpg"></div>
+                <div><img src="../Media/margen.jpg"></div>
+                <div><img src="../Media/margen.jpg"></div>
+                <div><img src="../Media/margen.jpg"></div>
+                <div><img src="../Media/margen.jpg"></div>
+                <div><img src="../Media/margen.jpg"></div>
+                <div><img src="../Media/margen.jpg"></div>
+                <div><img src="../Media/margen.jpg"></div>
+                <div><img src="../Media/margen.jpg"></div>
+                <div><img src="../Media/margen.jpg"></div>
+                <div><img src="../Media/margen.jpg"></div>
+                <div><img src="../Media/margen.jpg"></div>
+                <div><img src="../Media/margen.jpg"></div>
+                <div><img src="../Media/margen.jpg"></div>
+                <div><img src="../Media/margen.jpg"></div>
+                <div><img src="../Media/margen.jpg"></div>
+                <div><img src="../Media/margen.jpg"></div>
+                <div><img src="../Media/margen.jpg"></div>
+                <div><img src="../Media/margen.jpg"></div>
+                <div><img src="../Media/margen.jpg"></div>
+                <div><img src="../Media/margen.jpg"></div>
+                <div><img src="../Media/margen.jpg"></div>
+                <div><img src="../Media/margen.jpg"></div>
+                <div><img src="../Media/margen.jpg"></div>
+                <div><img src="../Media/margen.jpg"></div>
+                <div><img src="../Media/margen.jpg"></div>
+                <div><img src="../Media/margen.jpg"></div>
+                <div><img src="../Media/margen.jpg"></div>
+                <div><img src="../Media/margen.jpg"></div>
+                <div><img src="../Media/margen.jpg"></div>
+                <div><img src="../Media/margen.jpg"></div>
+                <div><img src="../Media/margen.jpg"></div>
+                <div><img src="../Media/margen.jpg"></div>
+                <div><img src="../Media/margen.jpg"></div>
+                <div><img src="../Media/margen.jpg"></div>
+                <div><img src="../Media/margen.jpg"></div>
+                <div><img src="../Media/margen.jpg"></div>
+                <div><img src="../Media/margen.jpg"></div>
+                <div><img src="../Media/margen.jpg"></div>
+                <div><img src="../Media/margen.jpg"></div>
+                <div><img src="../Media/margen.jpg"></div>
+                <div><img src="../Media/margen.jpg"></div>
+                <div><img src="../Media/margen.jpg"></div>
+                <div><img src="../Media/margen.jpg"></div>
+                <div><img src="../Media/margen.jpg"></div>
+                <div><img src="../Media/margen.jpg"></div>
+                <div><img src="../Media/margen.jpg"></div>
+                <div><img src="../Media/margen.jpg"></div>
+                <div><img src="../Media/margen.jpg"></div>
+            </div>
+        </div>
+        </div>
+        <br><br><br>
+        <center>
+        <a name="resultado"><div>
+            <div class="resultados">
+                <div style="margin: 2px; width: 50%; align-items: flex-start;">
+                    <div style="width: 30%; text-align: center;">
+                        <p id="resultado1" style="font-family: Arial, Helvetica, sans-serif; font-size: large;"> </p>
+                    </div>
+                    <div style="width: 50%; margin: 2px;">
+                        <p id="resultado3" style="font-family: Arial, Helvetica, sans-serif; font-size: medium;"></p>
+                        <p id="resultado4" style="font-style: italic; font-size: 12pt;"></p>
+                    </div>
+                </div>
+                <div style="margin: 2px; align-items: flex-start;width: 50%">
+                    <div>
+                        <br><br><br>
+                        <p id="resultado5" style="font-family: Arial, Helvetica, sans-serif; font-size: large;"> </p>
+                    </div>
+                    <div ></div>
+                        <p id="resultado2" style=" background-color: rgb(33, 75, 33); color: white; width: 80px; height: 80px; font-size: 3pc; border-radius: 100px; text-align: center; padding: 8px;"> </p>
+                    </div>
+                </div>
+            </div></a>
+            </center>
+    </body>
+</html>
